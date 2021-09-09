@@ -1,0 +1,41 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 14/01/2020 06:46
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.0b55dc165a40.eot");
+  src: url("../fonts/Flaticon.0b55dc165a40.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.aff33ebddbea.woff2") format("woff2"),
+       url("../fonts/Flaticon.6aabe134d3dc.woff") format("woff"),
+       url("../fonts/Flaticon.d631133137c9.ttf") format("truetype"),
+       url("../fonts/Flaticon.ce96c44ef549.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.ce96c44ef549.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-verified:before { content: "\f100"; }
+.flaticon-teeth:before { content: "\f101"; }
+.flaticon-cardiovascular:before { content: "\f102"; }
+.flaticon-ear:before { content: "\f103"; }
+.flaticon-bone:before { content: "\f104"; }
+.flaticon-lung:before { content: "\f105"; }
+.flaticon-cell:before { content: "\f106"; }
+.flaticon-doctor:before { content: "\f107"; }
+.flaticon-find:before { content: "\f108"; }
+.flaticon-customer-service:before { content: "\f109"; }
+.flaticon-call:before { content: "\f10a"; }

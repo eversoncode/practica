@@ -220,6 +220,10 @@ section p {
     margin-top: 10px;
     max-width: 100%;
 }
+#modal-body{
+  background: transparent;
+  color: red;
+}
 
 
 

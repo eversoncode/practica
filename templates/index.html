@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Medical HTML-5 Template </title>
+    <title> Clinica medica Medical. </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -41,13 +41,13 @@
 <header>
     <!--? Header Start -->
     <div class="header-area">
-        <div class="main-header header-sticky">
+        <div class="main-header">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2 col-md-1">
                         <div class="logo">
-                            <a href="index.html"><img src="{%static 'assets/img/logo/logo.png'%}" alt=""></a>
+                            <a href="{%url 'webjosue:index'%}"><img src="{%static 'assets/img/logo/logo.png'%}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10">
@@ -56,23 +56,22 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="doctor.html">Doctors</a></li>
-                                        <li><a href="department.html">Department</a></li>
-                                        <li><a href="blog.html">Blog</a>
+                                        <li><a href="{%url 'webjosue:index'%}">hogar</a></li>
+                                        <li><a href="{%url 'webjosue:about'%}">sobre nostros</a></li>
+                                        <li><a href="{%url 'webjosue:doctor'%}">Doctores</a></li>
+                                        <li><a href="{%url 'webjosue:departament'%}">Departamentos</a></li>
+                                        <li><a href="{%url 'webjosue:blog'%}">Blog</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog_details.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Element</a></li>
+                                                <li><a href="{%url 'webjosue:blog'%}">Blog</a></li>
+                                                <li><a href="{%url 'webjosue:detalles'%}">Blog Details</a></li>
+                                                <li><a href="{%url 'webjosue:elements'%}">Element</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                <a href="#" class="btn header-btn">01654.066.456</a>
+                                <a href="{%url 'webjosue:contact'%}" class="btn header-btn">contactanos</a>
                             </div>
                         </div>
                     </div>   
@@ -96,41 +95,102 @@
                     <div class="row">
                         <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
                             <div class="hero__caption">
-                                <span>Committed to success</span>
-                                <h1 class="cd-headline letters scale">We care about your 
+                                <span>medical la mas interesada en tu bienestar</span>
+                                <h2 class="cd-headline letters scale">Nos preocupamos por tu salud y la de tus
                                     <strong class="cd-words-wrapper">
-                                        <b class="is-visible">health</b>
-                                        <b>sushi</b>
-                                        <b>steak</b>
+                                        <b class="is-visible">Embarazadas</b>
+                                        <b>niños</b>
+                                        <b>ancianos</b>
                                     </strong>
-                                </h1>
-                                <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>
+                                </h2>
+                                <p data-animation="fadeInLeft" data-delay="0.1s"> contamos con laboratorios con la mejor tecnoliga para que puedas confiar tu salud
+                                tenemos, varios servicios, chequeos medicos de rutina, ultrasonidos, operaciones y mucho mas</p>
+                                <a href="http://127.0.0.1:8000/admin/webjosue/cita/" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">cita <i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>          
             </div>
+
             <!-- Single Slider -->
             <div class="single-slider slider-height d-flex align-items-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
                             <div class="hero__caption">
-                                <span>Committed to success</span>
-                                <h1 class="cd-headline letters scale">We care about your 
+                                <span>medical la mas interesada en tu bienestar</span>
+                                <h2 class="cd-headline letters scale">Nos preocupamos por tu salud y la de tus
                                     <strong class="cd-words-wrapper">
-                                        <b class="is-visible">health</b>
-                                        <b>sushi</b>
-                                        <b>steak</b>
+                                        <b class="is-visible">Embarazadas</b>
+                                        <b>niños</b>
+                                        <b>ancianos</b>
                                     </strong>
-                                </h1>
-                                <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>
+                                </h2>
+                                <p data-animation="fadeInLeft" data-delay="0.1s">contamos con laboratorios con la mejor tecnoliga para que puedas confiar tu salud
+                                tenemos, varios servicios, chequeos medicos de rutina, ultrasonidos, operaciones y mucho mas</p>
+                                <a href="http://127.0.0.1:8000/admin/webjosue/cita/" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">contactanos <i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                </div>          
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="gallery-area section-padding30">
+         {%if allclientes%}
+        <div class="container">
+            <!-- Section Tittle -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-tittle text-center mb-100">
+                        <span>pasientes </span>
+                        <h2>citas recervadas</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                 {%for arraydcliente in allclientes%}
+                <!-- Left -->
+                <div class="col-lg-6">
+                    <img src="{{arraydcliente.imagen}}"  width="150" height="110" class="img-fluid" />
+                                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{arraydcliente.name_cliente}}">
+  ver pasiente
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="{{arraydcliente.name_cliente}}" tabindex="-1" aria-labelledby="{{arraydcliente.name_cliente}}" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="{{arraydcliente.name_cliente}}">{{arraydcliente.name_cliente}}</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <h3>DPI:{{arraydcliente.Dpi}}</h3>
+          <br>
+          <h3>edad:{{arraydcliente.Edad}}</h3>
+          <br>
+          <h3>sexo:{{arraydcliente.sexo}}</h3>
+          <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+                {%endfor%}
+                {%else%}
+                no ai pasiente
+                {%endif%}
+                <!-- Right -->
             </div>
         </div>
     </div>
@@ -143,18 +203,16 @@
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle section-tittle2 mb-35">
-                            <span>About Our Company</span>
-                            <h2>Welcome To Our Hospital</h2>
+                            <span>SOBRE NUESTRA COMPAÑÍA</span>
+                            <h2>Bienvenido a clinica Medical</h2>
                         </div>
-                        <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
+                        <h4 align="justify"><p>Los fundadores del Hospital Centro Médico de Guatemala fueron los doctores José Fajardo,
+                            especializado en Medicina Interna; Bernardo del Valle en Cirugía General y Oncológica;
+                            Francisco Bauer, especializado en Cirugía, Ginecología y Obstetricia; Gerardo Alvarado
+                            especializado en Cardiología; Antonio Medrano en Urología y el Dr. Rodolfo Herrera Llerandi,
+                            especializado en Cirugía Toráxica.</p></h4>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
-                        </div>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Appointment <i class="ti-arrow-right"></i></a>
-                        </div>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Emargency 1 <i class="ti-arrow-right"></i></a>
+                            <a href="{%url 'webjosue:doctor'%}" class="btn about-btn">Nuestros doctores<i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -162,10 +220,7 @@
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img d-none d-lg-block">
-                            <img src="assets/img/gallery/about2.png'%}" alt="">
-                        </div>
-                        <div class="about-back-img ">
-                            <img src="assets/img/gallery/about1.png'%}" alt="">
+                            <img src="https://i.postimg.cc/KjV93D6R/imagen-2021-09-09-092426.png" width="640" height="695">
                         </div>
                     </div>
                 </div>
@@ -180,8 +235,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-tittle text-center mb-100">
-                        <span>Our Departments</span>
-                        <h2>Our Medical Services</h2>
+                        <span>Nuestros Departamentos</span>
+                        <h2>Nuestros Servicios Medicos</h2>
                     </div>
                 </div>
             </div>
@@ -193,37 +248,37 @@
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                     <i class="flaticon-teeth"></i>
-                                    <h4>Dentistry</h4>
+                                    <h4>Odontologia</h4>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
                                     <i class="flaticon-cardiovascular"></i>
-                                    <h4>Cardiology</h4>
+                                    <h4>Cardiologia</h4>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
                                     <i class="flaticon-ear"></i>
-                                    <h4>ENT Specialists</h4>
+                                    <h4>otologiaa</h4>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="Astrology-tab" data-toggle="tab" href="#Astrology" role="tab" aria-controls="contact" aria-selected="false">
                                     <i class="flaticon-bone"></i>
-                                    <h4>Astrology</h4>
+                                    <h4>reumatologia</h4>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="Neuroanatomy-tab" data-toggle="tab" href="#Neuroanatomy" role="tab" aria-controls="contact" aria-selected="false">
                                     <i class="flaticon-lung"></i>
-                                    <h4>Neuroanatomy</h4>
+                                    <h4>neumologia</h4>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="Blood-tab" data-toggle="tab" href="#Blood" role="tab" aria-controls="contact" aria-selected="false">
                                     <i class="flaticon-cell"></i>
-                                    <h4>Blood Screening</h4>
+                                    <h4>examen de sangre</h4>
                                 </a>
                             </li>
                         </ul>
@@ -237,14 +292,20 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
+                                    <h3>Dentista con mascarilla quirúrgica con
+                                     <br> escalador cerca del paciente</h3 >
+                                    <p>Somos un directorio de habla hispana creado con el propósito de acercarte
+                                        a especialistas y expertos dentales destacados. Para nosotros es importante
+                                        sientas seguridad al decidir comenzar un tratamiento para mejorar tu salud
+                                        bucal, por ello seguimos un proceso estricto para evaluar a los odontólogos
+                                        que encuentras en esta plataforma. De esta manera podrás ser atendido con altos
+                                        estándares de calidad. </p>
+                                    <a href="http://127.0.0.1:8000/admin/webjosue/cita/" class="dep-btn">cita<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-5">
                                 <div class="dept_thumb">
-                                    <img src="{%static 'assets/img/gallery/department_man.png'%}" alt="">
+                                    <img src="https://i.postimg.cc/tg6wTJ4L/doctor-making-2.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -255,14 +316,14 @@
                         <div class="row align-items-center no-gutters">
                             <div class="col-lg-7">
                                 <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
+                                    <h3>Cardiologa atenediedo  <br> a una de nuestras pasientes</h3 >
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                                     <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-5">
                                 <div class="dept_thumb">
-                                    <img src="{%static 'assets/img/gallery/department_man.png'%}" alt="">
+                                    <img src="https://i.postimg.cc/44qk96b6/medicos-alzheimer.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -347,61 +408,7 @@
     </div>
     <!-- depertment area end  -->
      <!--? Gallery Area Start -->
-     <div class="gallery-area section-padding30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-tittle text-center mb-100">
-                        <span>Our Gellary</span>
-                        <h2>Our Medical Camp</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Left -->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery1.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery2.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery3.png);"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Right -->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery4.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img small-img" style="background-image: url(assets/img/gallery/gallery5.png);"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="single-gallery mb-30">
-                                <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery6.png);"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Gallery Area End -->
     <!--? All startups Start -->
     <div class="all-starups-area testimonial-area fix">
@@ -414,7 +421,7 @@
                     <!-- Testimonial Content -->
                     <div class="testimonial-caption ">
                         <div class="testimonial-top-cap">
-                            <img src="assets/img/gallery/testimonial.png" alt="">
+                            <img src="{%static 'assets/img/gallery/testimonial.png'%}" alt="">
                             <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for yout hard.”</p>
                         </div>
                         <!-- founder -->
@@ -581,42 +588,42 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                            <div class="gallery-img " style="background-image: url({%static 'assets/img/gallery/gallery1.png);'%}"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                            <div class="gallery-img " style="background-image: url({%static 'assets/img/gallery/gallery2.png);'%}"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                            <div class="gallery-img " style="background-image: url({%static 'assets/img/gallery/gallery3.png);'%}"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                            <div class="gallery-img " style="background-image: url({%static 'assets/img/gallery/gallery4.png);'%}"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                             <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery5.png);"></div>
+                             <div class="gallery-img " style="background-image: url({%static 'assets/img/gallery/gallery5.png);'%}"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery6.png);"></div>
+                            <div class="gallery-img " style="background-image: url({%static 'assets/img/gallery/gallery6.png);'%}"></div>
                         </div>
                     </div>
                 </div>
@@ -640,7 +647,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="single-blogs mb-30">
                         <div class="blog-img">
-                            <img src="assets/img/gallery/blog1.png'%}" alt="">
+                            <img src="{%static 'assets/img/gallery/blog1.png'%}" alt="">
                         </div>
                         <div class="blogs-cap">
                             <div class="date-info">
@@ -689,7 +696,7 @@
     </main>
     <footer>
         <!--? Footer Start-->
-        <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">
+        <div class="footer-area section-bg" data-background="{%static 'assets/img/gallery/footer_bg.jpg'%}">
             <div class="container">
                 <div class="footer-top footer-padding">
                     <div class="row d-flex justify-content-between">

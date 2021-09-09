@@ -22,5 +22,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(('apps.webjosue.urls', 'webhorizon'))),
+    path('', include(('apps.webjosue.urls', 'webjosue'))),
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
