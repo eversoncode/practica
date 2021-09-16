@@ -10,7 +10,7 @@ class resourcecliente(resources.ModelResource):
 
 class admincliente(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['name_cliente']
-    list_display = ['Dpi','Edad','sexo']
+    list_display = ['name_cliente','Dpi','Edad','sexo','imagen']
     resource_class = resourcecliente
 admin.site.register(cliente,admincliente)
 
@@ -22,7 +22,7 @@ class resourceservicio(resources.ModelResource):
 
 class adminservicio(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['chequeo_medico']
-    list_display = ['precio']
+    list_display = ['chequeo_medico','precio']
     resource_class = resourceservicio
 
 admin.site.register(servicio, adminservicio)
@@ -44,7 +44,7 @@ class resourcemedico(resources.ModelResource):
 
 class adminmedico(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['name_medico']
-    list_display = ['especialidad','turno']
+    list_display = ['name_medico','especialidad','turno','imagen']
     resource_class = resourcemedico
 
 admin.site.register(medico, adminmedico)

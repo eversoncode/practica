@@ -137,7 +137,7 @@
         </div>
     </div>
         <div class="gallery-area section-padding30">
-         {%if allclientes%}
+            {%if allclientes%}
         <div class="container">
             <!-- Section Tittle -->
 
@@ -177,6 +177,10 @@
           <br>
           <h3>sexo:{{arraydcliente.sexo}}</h3>
           <br>
+          {%for arraydmedico in allmedico%}
+          <h3>medico:{{arraydmedico.name_medico}}</h3>
+          {%endfor%}
+          <br>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
@@ -188,7 +192,7 @@
                 </div>
                 {%endfor%}
                 {%else%}
-                no ai pasiente
+               <h1>no ai pasientes</h1>
                 {%endif%}
                 <!-- Right -->
             </div>

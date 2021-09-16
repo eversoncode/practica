@@ -75,11 +75,11 @@ WSGI_APPLICATION = 'Devjosue.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Practica',
+        'NAME': 'base3',
         'USER': 'eversito',
         'PASSWORD': '12345',
         'HOST': 'localhost',
@@ -87,6 +87,7 @@ DATABASES = {
    }
 
 }
+"""
 """
 import dj_database_url
 from decouple import config
