@@ -87,8 +87,8 @@ DATABASES = {
    }
 
 }
-"""
 
+"""
 import dj_database_url
 from decouple import config
 
@@ -98,6 +98,7 @@ DATABASES = {
     )
 
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

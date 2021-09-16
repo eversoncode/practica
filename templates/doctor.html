@@ -46,7 +46,7 @@
                     <!-- Logo -->
                     <div class="col-xl-2 col-lg-2 col-md-1">
                         <div class="logo">
-                            <a href="index.html"><img src="{%static 'assets/img/logo/logo.png'%}" alt=""></a>
+                            <a href="{%url 'webjosue:index'%}"><img src="{%static 'assets/img/logo/logo.png'%}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10">
@@ -73,51 +73,18 @@
                                 <a href="{%url 'webjosue:contact'%}" class="btn header-btn">contactanos</a>
                             </div>
                         </div>
-                    </div>   
-                    <!-- Mobile Menu -->
-                    <div class="col-12">
-                        <div class="mobile_menu d-block d-lg-none"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
 </header>
-<main>
-    <!--? Hero Start -->
-    <div class="slider-area2">
-        <div class="slider-height2 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                <div class="col-xl-12">
-                    <div class="hero-cap hero-cap2 text-center">
-                        <h2>Doctors</h2>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Hero End -->
-
-                <!-- Right -->
-    <!--? Team Start -->
-    <div class="team-area section-padding30">
-        <div class="container">
-            <!-- Section Tittle -->
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                      <div class="gallery-area section-padding30">
-         {%if allmedico%}
+        <div class="gallery-area section-padding30">
+            {%if allmedico%}
         <div class="container">
             <!-- Section Tittle -->
 
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-tittle text-center mb-100">
-                        <span>Our Doctors</span>
-                        <h2>Our Specialist</h2>
+                        <span>NUESTROS MEDICOS </span>
+                        <h2>LOS MEJORES EN SU ESPECIALIDAD</h2>
                     </div>
                 </div>
             </div>
@@ -126,14 +93,14 @@
                  {%for arraydmedico in allmedico%}
                 <!-- Left -->
                 <div class="col-lg-6">
-                    <img src="{{arraydmedico.imagen}}"  width="150" height="110" class="img-fluid" />
+                    <img src="{{arraydmedico.imagen}}"  width="400" height="350" class="img-fluid" />
                                 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{arraydmedico.name_medico}}">
-  ver pasiente
+  detalles del medico
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="{{arraydmedico.name_medico}}" tabindex="-1" aria-labelledby="{{arraydmedico.name_medico}}" aria-hidden="true">
+<div class="modal fade" id="{{arraydmedico.name_medico}}" tabindex="-1" aria-labelledby="{{arraydcliente.name_cliente}}" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -143,6 +110,10 @@
         </button>
       </div>
       <div class="modal-body">
+          <h3>especialiad:{{arraydmedico.especialidad}}</h3>
+          <br>
+          <h3>turno:{{arraydmedico.turno}}</h3>
+          <br>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
@@ -150,71 +121,20 @@
     </div>
   </div>
 </div>
-                                    {%endfor%}
+
+                </div>
+                {%endfor%}
                 {%else%}
-                no ai pasiente
+               <h1>no ai medicos</h1>
                 {%endif%}
-    <!-- Team End -->
-    </main>
+                <!-- Right -->
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+
     <footer>
         <!--? Footer Start-->
-        <div class="footer-area section-bg" data-background="{%static 'assets/img/gallery/footer_bg.jpg'%}">
-            <div class="container">
-                <div class="footer-top footer-padding">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="{%static 'assets/img/logo/logo2_footer.png'%}" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>About Us</h4>
-                                    <div class="footer-pera">
-                                        <p class="info1">Lorem igpsum doldfor sit amet, adipiscing elit, sed do eiusmod tempor cergelit rgh. </p>
-                                        <p class="info1">Lorem ipsum dolor sit amet, adipiscing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-number mb-50">
-                                    <h4><span>+564 </span>7885 3222</h4>
-                                    <p>youremail@gmail.com</p>
-                                </div>
-                                <!-- Form -->
-                                <div class="footer-form">
-                                    <div id="mc_embed_signup">
-                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
-                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
-                                            <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
-                                                    Send
-                                                </button>
-                                            </div>
-                                            <div class="mt-10 info"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="row d-flex justify-content-between align-items-center">
-                        <div class="col-xl-9 col-lg-8">
-                            <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4">
                             <!-- Footer Social -->
                             <div class="footer-social f-right">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
