@@ -60,12 +60,6 @@
                                         <li><a href="{%url 'webjosue:about'%}">sobre nostros</a></li>
                                         <li><a href="{%url 'webjosue:doctor'%}">Doctores</a></li>
                                         <li><a href="{%url 'webjosue:departament'%}">Departamentos</a></li>
-                                        <li><a href="{%url 'webjosue:blog'%}">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="{%url 'webjosue:blog'%}">Blog</a></li>
-                                                <li><a href="{%url 'webjosue:detalles'%}">Blog Details</a></li>
-                                                <li><a href="{%url 'webjosue:elements'%}">Element</a></li>
-                                            </ul>
                                         </li>
                                     </ul>
                                 </nav>
@@ -102,6 +96,7 @@
     </div>
     <!-- Hero End -->
     <!--? About Start-->
+     <!--? About Start-->
     <div class="about-area section-padding2">
         <div class="container">
             <div class="row">
@@ -109,18 +104,16 @@
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle section-tittle2 mb-35">
-                            <span>About Our Company</span>
-                            <h2>Welcome To Our Hospital</h2>
+                            <span>SOBRE NUESTRA COMPAÑÍA</span>
+                            <h2>Bienvenido a clinica Medical</h2>
                         </div>
-                        <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
+                        <h4 align="justify"><p>Los fundadores del Hospital Centro Médico de Guatemala fueron los doctores José Fajardo,
+                            especializado en Medicina Interna; Bernardo del Valle en Cirugía General y Oncológica;
+                            Francisco Bauer, especializado en Cirugía, Ginecología y Obstetricia; Gerardo Alvarado
+                            especializado en Cardiología; Antonio Medrano en Urología y el Dr. Rodolfo Herrera Llerandi,
+                            especializado en Cirugía Toráxica.</p></h4>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
-                        </div>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Appointment <i class="ti-arrow-right"></i></a>
-                        </div>
-                        <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Emargency 1 <i class="ti-arrow-right"></i></a>
+                            <a href="{%url 'webjosue:doctor'%}" class="btn about-btn">Nuestros doctores<i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -128,10 +121,7 @@
                     <!-- about-img -->
                     <div class="about-img ">
                         <div class="about-font-img d-none d-lg-block">
-                            <img src="{%static 'assets/img/gallery/about2.png'%}" alt="">
-                        </div>
-                        <div class="about-back-img ">
-                            <img src="{%static 'assets/img/gallery/about1.png'%}" alt="">
+                            <img src="https://i.postimg.cc/KjV93D6R/imagen-2021-09-09-092426.png" width="640" height="695">
                         </div>
                     </div>
                 </div>
@@ -139,11 +129,10 @@
         </div>
     </div>
     <!-- About  End-->
-
     <!-- Team End -->
     </main>
     <footer>
-        <!--? Footer Start-->
+       <!--? Footer Start-->
         <div class="footer-area section-bg" data-background="{%static 'assets/img/gallery/footer_bg.jpg'%}">
             <div class="container">
                 <div class="footer-top footer-padding">
@@ -152,17 +141,16 @@
                             <div class="single-footer-caption mb-50">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="{%url 'webjosue:index'%}"><img src="{%static 'assets/img/logo/logo2_footer.png'%}" alt=""></a>
+                                    <a href="%url 'webjosue:index'%"><img src="{%static 'assets/img/logo/logo2_footer.png'%}" alt=""></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>About Us</h4>
+                                    <h4>contactanos</h4>
                                     <div class="footer-pera">
-                                        <p class="info1">Lorem igpsum doldfor sit amet, adipiscing elit, sed do eiusmod tempor cergelit rgh. </p>
-                                        <p class="info1">Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                                        <p class="info1">cualquier duda le dejamos nuetros metodos de comunicacion. </p>
                                     </div>
                                 </div>
                             </div>
@@ -170,18 +158,14 @@
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-number mb-50">
-                                    <h4><span>+564 </span>7885 3222</h4>
-                                    <p>youremail@gmail.com</p>
+                                    <h4><span>+502 </span>31705866</h4>
+                                    <p>eversonmelgar4@gmail.com</p>
                                 </div>
                                 <!-- Form -->
                                 <div class="footer-form">
                                     <div id="mc_embed_signup">
                                         <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
-                                            <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
                                             <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
-                                                    Send
-                                                </button>
                                             </div>
                                             <div class="mt-10 info"></div>
                                         </form>
